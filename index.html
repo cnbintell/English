@@ -62,13 +62,13 @@ input[type=number]{width:100px;padding:9px 10px;border:1px solid var(--border);b
     <input id="setInput" type="number" min="1" max="100" value="1" aria-label="Exercise set number">
     <button class="primary" id="goBtn">Go</button>
     <button class="primary" id="toggleBtn">Show Answer Key</button>
-    <span class="counter" id="counter"></span>
+    
   </div>
-  <div class="progress"><div id="progressBar"></div></div>
+  <div class="progress"></div>
 </div>
 
 <main id="content"></main>
-<div class="note">Source-based app: questions and answer-key wording are preserved from the supplied text file. Answer keys are revealed only when requested.</div>
+
 </div>
 
 <script>
@@ -142,5 +142,9 @@ document.getElementById('toggleBtn').addEventListener('click', () => {
 });
 render();
 </script>
+<footer style="text-align:center; padding:18px 10px; margin-top:24px; color:#666; font-size:14px;">
+  © intellearn
+</footer>
+
 </body>
 </html>
